@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d3d3d3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/noimage" />
+
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:text="Full name"
+            android:textColor="#232323"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/imgProfile" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20sp"
+            android:textColor="#232323"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_below="@+id/tvFullname"
+            android:layout_toEndOf="@+id/imgProfile" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="20sp"
+            android:textColor="#232323"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_below="@+id/tvAge"
+            android:layout_toEndOf="@+id/imgProfile" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:textColor="#232323"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_below="@+id/tvAddress"
+            android:layout_toEndOf="@+id/imgProfile" />
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
